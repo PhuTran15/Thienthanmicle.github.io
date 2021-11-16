@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <title>Have a good day !!!</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <style>
             *{
                 margin: 0;
@@ -10,6 +13,7 @@
 
             }
             .start{
+                margin-top: 50px;
                 position: relative;
                 text-align: center;
                 font-size: 50px;
@@ -22,35 +26,107 @@
                 /* text-align: center; */
             }
             .first{
-                position: absolute;
-                /* width: 50%; */
+                display: block;
+                position: relative;
+                margin-top: 200px;
+                width: 50%;
+                /* margin: 0 auto; */
             }
-            .first button{
-                margin-left: 200px;
+            .first p{
+                /* text-align: center; */
+                width: 60px;
+                margin: 0 auto;
+                text-align: center;
+                /* margin-left: 200px; */
             }
             .last{
-                position: absolute;
-                /* width: 50%; */
+                display: block;
+                position: relative;
+                margin-top: 200px;
+                width: 50%;
             }
-            .last button{
-                margin-right: 600px;
-                /* margin-top: 80px; */
+            .last p{
+                /* text-align: center; */
+                width: 60px;
+                margin: 0 auto;
+                text-align: center;
+                /* padding-left: 7px; */
             }
-            
+            .content p{
+                /* width: 50px; */
+                background-color: aliceblue;
+                font-size: 30px;
+                cursor: pointer;
+            }
+            .content p:hover{
+                color: white;
+                background-color: black;
+            }
+            /* .content p:focus{
+                visibility: hidden;
+            } */
+            .helo{
+                font-size: 40px;
+                color: red;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
         <div class="start">
-            <!-- <p>Có chứ sao không dmm</p> -->
-            <p>Bê đê luôn á hả</p>
+            <p>Phú có đẹp trai cute hong dạ</p>
         </div>
-        <!-- <div class="content">
+        <div class="content">
             <div class="first">
-                <p>Tớ đồng ý</p>
+                <p id="first1">Yes</p>
             </div>
             <div class="last">
-                <p>Tớ không đồng ý</p>
+                <p id="last1">No</p>
+                <!-- <p id="last2"></p> -->
             </div>
-        </div> -->
+        </div>
+
+        <script>
+            // $( "p#last1" ).click(function() {
+                // $( this ).fadeOut( 100 );
+                // $( this ).fadeIn( 500 );
+            //     $(this).html('Yes');
+            //     $("#first1").html('No');
+            //     $(this).css({'background-color':'black','color':'white'});
+            // });
+            // $( "p#last1" ).mouseleave(function() {
+                // $( this ).fadeOut( 100 );
+                // $( this ).fadeIn( 500 );
+                // $(this).html('No');
+            // });
+            $("#last1").click(function () {
+                $(this).html('Yes');
+                $("#first1").html('No');
+                $(this).css({'background-color':'black','color':'white'});
+                $("#first1").css({'background-color':'white','color':'black'});
+               $(".content").after('<div class="helo"></div>' );
+               $(".helo").html('Uii cảm động quóa');
+            });
+            // $("#last1").hover(function (){
+            //     $(this).css({'background-color':'black','color':'white'})
+            // });
+            // $("#first1").hover(function (){
+            //     $(this).css({'background-color':'black','color':'white'})
+            // });
+            $("#first1").click(function () {
+                $(this).html('Yes');
+                $("#last1").html('No');
+                $(this).css({'background-color':'black','color':'white'});
+                $("#last1").css({'background-color':'white','color':'black'});
+               $(".content").after('<div class="helo"></div>' );
+               $(".helo").html('Uii cảm động quóa');
+            });
+            // $("p#first1").hover(function(){
+            //     var x = 1 + Math.floor(Math.random() * 200);
+            //     $(this).animate({margin: x});
+
+            // });
+
+        </script>
     </body>
 </html>

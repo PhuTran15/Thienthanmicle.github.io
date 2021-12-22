@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>thienthanmicle</title>
+        <!-- <link rel="stylesheet" href="style3d.css"> -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #050505;
+}
+.cube{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    color: rgba(113, 236, 12, 0.76);
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 125px;
+    font-size: 30px;
+    padding-left: 90px;
+    /* box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+    0 0 200px rgba(0, 255, 0, 0.4),
+    0 0 300px rgba(0, 255, 0, 0.6),
+    0 0 400px rgba(0, 255, 0, 0.8),
+    0 0 500px rgba(0, 255, 0, 1); */
+    background: linear-gradient(#151515, #00ec00);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(125px);
+}
+.cube div span p{
+    filter: blur(2px);
+}
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(125px);
+}
+.top::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background: #0f0;
+    transform: translateZ(-400px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+    0 0 200px rgba(0, 255, 0, 0.4),
+    0 0 300px rgba(0, 255, 0, 0.6),
+    0 0 400px rgba(0, 255, 0, 0.8),
+    0 0 500px rgba(0, 255, 0, 1);
+}
+/* .cube1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: animate1 4s linear infinite;
+} */
+.cube1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    color: rgba(113, 236, 12, 0.76);
+    transform-style: preserve-3d;
+    animation: animate1 4s linear infinite;
+    z-index: 99;
+}
+@keyframes animate1{
+    0%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+}
+/* .cube1{
+    position: absolute;
+    margin-top: -550px;
+    margin-left: 150px;
+} */
+.cube1 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube1 div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    font-size: 25px;
+    padding-left: 70px;
+    background: linear-gradient(#151515, #00ec00);
+    transform: rotateY(calc(90deg * var(--ii))) translateZ(250px);
+}
+.cube1 div span p{
+    filter: blur(2px);
+}
+.top1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    /* background: #9e29b6; */
+    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+    0 0 200px rgba(0, 255, 0, 0.4),
+    0 0 300px rgba(0, 255, 0, 0.6),
+    0 0 400px rgba(0, 255, 0, 0.8),
+    0 0 500px rgba(0, 255, 0, 1);
+    background: #00ec00;
+    filter: blur(20px);
+    transform: rotateX(90deg) translateZ(250px);
+}
+/* .top1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #9e29b6;
+    transform: translateZ(-400px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(194, 61, 221, 0.2),
+    0 0 200px rgba(194, 61, 221, 0.4),
+    0 0 300px rgba(194, 61, 221, 0.6),
+    0 0 400px rgba(194, 61, 221, 0.8),
+    0 0 500px rgba(194, 61, 221, 1);
+} */
+.cube2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: animate2 4s linear infinite;
+    z-index: 9;
+}
+@keyframes animate2{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.cube2{
+    position: absolute;
+    margin-top: -550px;
+    margin-left: 1270px;
+    /* margin-right: 150px; */
+}
+.cube2 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube2 div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515, #9e29b6);
+    transform: rotateY(calc(90deg * var(--ii))) translateZ(150px);
+}
+.top2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(150px);
+}
+.top2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #9e29b6;
+    transform: translateZ(-400px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(194, 61, 221, 0.2),
+    0 0 200px rgba(194, 61, 221, 0.4),
+    0 0 300px rgba(194, 61, 221, 0.6),
+    0 0 400px rgba(194, 61, 221, 0.8),
+    0 0 500px rgba(194, 61, 221, 1);
+}
+        </style>
+    </head>
+    <body>
+        <div class="first">
+            <div class="cube">
+                <div class="top"></div>
+                <div>
+                    <span style="--i:0;"><p>NOEL</p></span>
+                    <span style="--i:1;"><p>HAPPY</p></span>
+                    <span style="--i:2;"><p>CODE</p></span>
+                    <span style="--i:3;"><p>LIGHT</p></span>
+                </div>
+            </div>
+            <div class="cube1">
+                <div class="top1"></div>
+                <div>
+                    <span style="--ii:0;"><p>MERRY</p></span>
+                    <span style="--ii:1;"><p>SMILE</p></span>
+                    <span style="--ii:2;"><p>TMAS</p></span>
+                    <span style="--ii:3;"><p>CHIRS</p></span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="first1">
+            <div class="cube1">
+                <div class="top1"></div>
+                <div>
+                    <span style="--ii:0;"></span>
+                    <span style="--ii:1;"></span>
+                    <span style="--ii:2;"></span>
+                    <span style="--ii:3;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="first2">
+            <div class="cube2">
+                <div class="top2"></div>
+                <div>
+                    <span style="--ii:0;"></span>
+                    <span style="--ii:1;"></span>
+                    <span style="--ii:2;"></span>
+                    <span style="--ii:3;"></span>
+                </div>
+            </div>
+        </div> -->
+        
+        
+    </body>
+</html>

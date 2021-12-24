@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: #050505; */
 }
 
 body .first{
@@ -23,6 +24,7 @@ body .first{
     width: 250px;
     height: 250px;
     color: rgba(113, 236, 12, 0.76);
+    /* color: rgba(255, 0, 0, 0.76); */
     transform-style: preserve-3d;
     animation: animate 4s linear infinite;
 }
@@ -57,6 +59,7 @@ body .first{
     0 0 400px rgba(0, 255, 0, 0.8),
     0 0 500px rgba(0, 255, 0, 1); */
     background: linear-gradient(#151515, #00ec00);
+    /* background: linear-gradient(#fff, #ff0000); */
     transform: rotateY(calc(90deg * var(--i))) translateZ(125px);
 }
 .cube div span p{
@@ -68,7 +71,7 @@ body .first{
     left: 0;
     width: 250px;
     height: 250px;
-    background: #222;
+    background: #050505;
     transform: rotateX(90deg) translateZ(125px);
 }
 .top::before{
@@ -79,6 +82,7 @@ body .first{
     width: 250px;
     height: 250px;
     background: #0f0;
+    /* background: red; */
     transform: translateZ(-400px);
     filter: blur(20px);
     box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
@@ -86,6 +90,11 @@ body .first{
     0 0 300px rgba(0, 255, 0, 0.6),
     0 0 400px rgba(0, 255, 0, 0.8),
     0 0 500px rgba(0, 255, 0, 1);
+    /* box-shadow: 0 0 120px rgba(255, 0, 0, 0.2),
+    0 0 200px rgba(255, 0, 0, 0.4),
+    0 0 300px rgba(255, 0, 0, 0.6),
+    0 0 400px rgba(255, 0, 0, 0.8),
+    0 0 500px rgba(255, 0, 0, 1); */
 }
 /* .cube1{
     position: relative;
@@ -99,6 +108,7 @@ body .first{
     width: 200px;
     height: 200px;
     color: rgba(113, 236, 12, 0.76);
+    /* color: red; */
     transform-style: preserve-3d;
     animation: animate1 4s linear infinite;
     z-index: 99;
@@ -134,6 +144,7 @@ body .first{
     font-size: 25px;
     padding-left: 70px;
     background: linear-gradient(#151515, #00ec00);
+    /* background: linear-gradient(#fff, #ff0000); */
     transform: rotateY(calc(90deg * var(--ii))) translateZ(250px);
 }
 .cube1 div span p{
@@ -151,26 +162,16 @@ body .first{
     0 0 300px rgba(0, 255, 0, 0.6),
     0 0 400px rgba(0, 255, 0, 0.8),
     0 0 500px rgba(0, 255, 0, 1);
+    /* box-shadow: 0 0 120px rgba(255, 0, 0, 0.2),
+    0 0 200px rgba(255, 0, 0, 0.4),
+    0 0 300px rgba(255, 0, 0, 0.6),
+    0 0 400px rgba(255, 0, 0, 0.8),
+    0 0 500px rgba(255, 0, 0, 1); */
     background: #00ec00;
+    /* background: red; */
     filter: blur(20px);
     transform: rotateX(90deg) translateZ(250px);
 }
-/* .top1::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background: #9e29b6;
-    transform: translateZ(-400px);
-    filter: blur(20px);
-    box-shadow: 0 0 120px rgba(194, 61, 221, 0.2),
-    0 0 200px rgba(194, 61, 221, 0.4),
-    0 0 300px rgba(194, 61, 221, 0.6),
-    0 0 400px rgba(194, 61, 221, 0.8),
-    0 0 500px rgba(194, 61, 221, 1);
-} */
 .cube2{
     position: relative;
     width: 100px;
@@ -235,6 +236,39 @@ body .first{
     0 0 400px rgba(194, 61, 221, 0.8),
     0 0 500px rgba(194, 61, 221, 1);
 }
+.end {
+    /* position: relative; */
+    display: block;
+    height: 250px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: #050505;
+}
+.end h2{
+    padding-top: 120px;
+}
+.end input{
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: green;
+    border-style: solid;
+    width: 200px;
+}
+.end input[type=submit]{
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: rgb(23, 231, 23);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.end input[type=submit]:hover{
+    background: green;
+}
         </style>
     </head>
     <body>
@@ -243,43 +277,28 @@ body .first{
                 <div class="top"></div>
                 <div>
                     <span style="--i:0;"><p>NOEL</p></span>
-                    <span style="--i:1;"><p>HAPPY</p></span>
-                    <span style="--i:2;"><p>CODE</p></span>
-                    <span style="--i:3;"><p>LIGHT</p></span>
+                    <span style="--i:1;"><p>NHÓE</p></span>
+                    <span style="--i:2;"><p>LÀNH</p></span>
+                    <span style="--i:3;"><p>TỐT</p></span>
                 </div>
             </div>
             <div class="cube1">
                 <div class="top1"></div>
                 <div>
                     <span style="--ii:0;"><p>MERRY</p></span>
-                    <span style="--ii:1;"><p>SMILE</p></span>
+                    <span style="--ii:1;"><p>CHIRS</p></span>
                     <span style="--ii:2;"><p>TMAS</p></span>
-                    <span style="--ii:3;"><p>CHIRS</p></span>
+                    <span style="--ii:3;"><p>GIRL</p></span>
                 </div>
             </div>
         </div>
-        <!-- <div class="first1">
-            <div class="cube1">
-                <div class="top1"></div>
-                <div>
-                    <span style="--ii:0;"></span>
-                    <span style="--ii:1;"></span>
-                    <span style="--ii:2;"></span>
-                    <span style="--ii:3;"></span>
-                </div>
-            </div>
+        <div class="end">
+            <form action="3dsend.html">
+                <h2>Hãy ước gì đó vào đêm nây nào cô gái</h2>
+                <input type="text" placeholder="Ông già Noel sẽ đến ngay thôi" name="wish" required>
+                <input type="submit" value="GỬI">
+            </form>
         </div>
-        <div class="first2">
-            <div class="cube2">
-                <div class="top2"></div>
-                <div>
-                    <span style="--ii:0;"></span>
-                    <span style="--ii:1;"></span>
-                    <span style="--ii:2;"></span>
-                    <span style="--ii:3;"></span>
-                </div>
-            </div>
-        </div> -->
         
         
     </body>

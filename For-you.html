@@ -23,9 +23,8 @@ body .first{
     position: absolute;
     width: 250px;
     height: 250px;
-    color: rgba(0, 0, 255, 0.76);
-    /* color: rgba(45, 130, 241, 0.76); */
-    /* color: rgba(113, 236, 12, 0.76); */
+    color: rgba(113, 236, 12, 0.76);
+    /* color: rgba(255, 0, 0, 0.76); */
     transform-style: preserve-3d;
     animation: animate 4s linear infinite;
 }
@@ -59,13 +58,12 @@ body .first{
     0 0 300px rgba(0, 255, 0, 0.6),
     0 0 400px rgba(0, 255, 0, 0.8),
     0 0 500px rgba(0, 255, 0, 1); */
-    /* background: linear-gradient(#151515, #1486e4); */
-    background: linear-gradient(#151515, #0000ff);
+    background: linear-gradient(#151515, #00ec00);
     /* background: linear-gradient(#fff, #ff0000); */
     transform: rotateY(calc(90deg * var(--i))) translateZ(125px);
 }
 .cube div span p{
-    filter: blur(1.5px);
+    filter: blur(2px);
 }
 .top{
     position: absolute;
@@ -83,15 +81,15 @@ body .first{
     left: 0;
     width: 250px;
     height: 250px;
-    /* background: rgb(14, 65, 207); */
-    background: blue;
+    background: #0f0;
+    /* background: red; */
     transform: translateZ(-400px);
     filter: blur(20px);
-    box-shadow: 0 0 120px rgba(0, 0, 255, 0.2),
-    0 0 200px rgba(0, 0, 255, 0.4),
-    0 0 300px rgba(0, 0, 255, 0.6),
-    0 0 400px rgba(0, 0, 255, 0.8),
-    0 0 500px rgba(0, 0, 255, 1);
+    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+    0 0 200px rgba(0, 255, 0, 0.4),
+    0 0 300px rgba(0, 255, 0, 0.6),
+    0 0 400px rgba(0, 255, 0, 0.8),
+    0 0 500px rgba(0, 255, 0, 1);
     /* box-shadow: 0 0 120px rgba(255, 0, 0, 0.2),
     0 0 200px rgba(255, 0, 0, 0.4),
     0 0 300px rgba(255, 0, 0, 0.6),
@@ -109,9 +107,8 @@ body .first{
     position: absolute;
     width: 200px;
     height: 200px;
-    /* color: rgba(113, 236, 12, 0.76); */
-    /* color: rgba(45, 130, 241, 0.76); */
-    color: rgba(0, 0, 255, 0.76);
+    color: rgba(113, 236, 12, 0.76);
+    /* color: red; */
     transform-style: preserve-3d;
     animation: animate1 4s linear infinite;
     z-index: 99;
@@ -146,12 +143,12 @@ body .first{
     padding-top: 100px;
     font-size: 25px;
     padding-left: 70px;
-    background: linear-gradient(#151515, #0000ff);
+    background: linear-gradient(#151515, #00ec00);
     /* background: linear-gradient(#fff, #ff0000); */
     transform: rotateY(calc(90deg * var(--ii))) translateZ(250px);
 }
 .cube1 div span p{
-    filter: blur(1.5px);
+    filter: blur(2px);
 }
 .top1{
     position: absolute;
@@ -160,38 +157,21 @@ body .first{
     width: 200px;
     height: 200px;
     /* background: #9e29b6; */
-    box-shadow: 0 0 120px rgba(0, 0, 255, 0.2),
-    0 0 200px rgba(0, 0, 255, 0.4),
-    0 0 300px rgba(0, 0, 255, 0.6),
-    0 0 400px rgba(0, 0, 255, 0.8),
-    0 0 500px rgba(0, 0, 255, 1);
+    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+    0 0 200px rgba(0, 255, 0, 0.4),
+    0 0 300px rgba(0, 255, 0, 0.6),
+    0 0 400px rgba(0, 255, 0, 0.8),
+    0 0 500px rgba(0, 255, 0, 1);
     /* box-shadow: 0 0 120px rgba(255, 0, 0, 0.2),
     0 0 200px rgba(255, 0, 0, 0.4),
     0 0 300px rgba(255, 0, 0, 0.6),
     0 0 400px rgba(255, 0, 0, 0.8),
     0 0 500px rgba(255, 0, 0, 1); */
-    /* background: #1486e4; */
-    background: #0000ff;
+    background: #00ec00;
     /* background: red; */
     filter: blur(20px);
     transform: rotateX(90deg) translateZ(250px);
 }
-/* .top1::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background: #9e29b6;
-    transform: translateZ(-400px);
-    filter: blur(20px);
-    box-shadow: 0 0 120px rgba(194, 61, 221, 0.2),
-    0 0 200px rgba(194, 61, 221, 0.4),
-    0 0 300px rgba(194, 61, 221, 0.6),
-    0 0 400px rgba(194, 61, 221, 0.8),
-    0 0 500px rgba(194, 61, 221, 1);
-} */
 .cube2{
     position: relative;
     width: 100px;
@@ -271,7 +251,7 @@ body .first{
 .end input{
     margin-top: 20px;
     border-radius: 5px;
-    border-color: blue;
+    border-color: green;
     border-style: solid;
     width: 200px;
 }
@@ -280,14 +260,14 @@ body .first{
     width: 50px;
     margin: 0 auto;
     margin-top: 10px;
-    background: rgb(43, 43, 243);
+    background: rgb(23, 231, 23);
     font-weight: bold;
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
 .end input[type=submit]:hover{
-    background: blue;
+    background: green;
 }
         </style>
     </head>
@@ -297,9 +277,9 @@ body .first{
                 <div class="top"></div>
                 <div>
                     <span style="--i:0;"><p>NOEL</p></span>
-                    <span style="--i:1;"><p>NHÓE</p></span>
+                    <span style="--i:1;"><p>VUI</p></span>
                     <span style="--i:2;"><p>VẺ</p></span>
-                    <span style="--i:3;"><p>VUI</p></span>
+                    <span style="--i:3;"><p>TỐT</p></span>
                 </div>
             </div>
             <div class="cube1">
@@ -313,36 +293,13 @@ body .first{
             </div>
         </div>
         <div class="end">
-            <form action="01032004-Merry-Chirstmas.html">
+            <form action="Merry-Chirstmas.html">
                 <h2>Hãy ước gì đó vào đêm Noel này đi cô gái</h2>
                 <p>(Anh sẽ không nhìn trộm đâu, I promise)</p>
                 <input type="text" placeholder="Ông già Noel sẽ đến ngay thôi" name="wish" required>
                 <input type="submit" value="GỬI">
-                <!-- <a href="3dsend.html">GỬI</a> -->
             </form>
         </div>
-        <!-- <div class="first1">
-            <div class="cube1">
-                <div class="top1"></div>
-                <div>
-                    <span style="--ii:0;"></span>
-                    <span style="--ii:1;"></span>
-                    <span style="--ii:2;"></span>
-                    <span style="--ii:3;"></span>
-                </div>
-            </div>
-        </div>
-        <div class="first2">
-            <div class="cube2">
-                <div class="top2"></div>
-                <div>
-                    <span style="--ii:0;"></span>
-                    <span style="--ii:1;"></span>
-                    <span style="--ii:2;"></span>
-                    <span style="--ii:3;"></span>
-                </div>
-            </div>
-        </div> -->
         
         
     </body>
